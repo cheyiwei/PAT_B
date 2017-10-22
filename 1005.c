@@ -14,12 +14,10 @@ int main(){
 	int num[n];
 	int m[n];
 	int i=0;
-	for(i=0;i<n;i++){
+	for(i=n-1;i>=0;i++){
 		scanf("%d",&num[i]);
 		m[i] = 0;
 	}
-	
-	qsort(num,i,sizeof(int),compare);
 	
 	for(i=0;i<n;i++){
 		int a = num[i];
